@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework-10</title>
+    <title>Homework-11</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,19 +15,39 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/styles-DPntbqQp.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-MjawMu3A.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-DcVhCzGb.css">
   </head>
   <body>
     <main>
-      <section>
-        <div class="container start-cont">
-          <h1>Homework-10</h1>
-          <ul class="link-list">
-            <li><a class="link-item" href="./1-timer.html">Timer</a></li>
-            <li><a class="link-item" href="./2-snackbar.html">Snackbar</a></li>
-          </ul>
+      <section class="search-section">
+        <h1 class="visually-hidden">Search images</h1>
+        <div class="container">
+          <form class="form">
+            <label>
+              <input
+                class="input-word"
+                type="text"
+                name="word"
+                placeholder="Search images..."
+                maxlength="100"
+              />
+            </label>
+            <button class="btn" type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section-images">
+        <div class="container">
+          <h2 class="visually-hidden">Images list</h2>
+          <span class="loader"></span>
+          <ul class="gallery"></ul>
         </div>
       </section>
     </main>
+
   </body>
 </html>

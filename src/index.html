@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework-10</title>
+    <title>Homework-11</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,15 +19,33 @@
   </head>
   <body>
     <main>
-      <section>
-        <div class="container start-cont">
-          <h1>Homework-10</h1>
-          <ul class="link-list">
-            <li><a class="link-item" href="./1-timer.html">Timer</a></li>
-            <li><a class="link-item" href="./2-snackbar.html">Snackbar</a></li>
-          </ul>
+      <section class="search-section">
+        <h1 class="visually-hidden">Search images</h1>
+        <div class="container">
+          <form class="form">
+            <label>
+              <input
+                class="input-word"
+                type="text"
+                name="word"
+                placeholder="Search images..."
+                maxlength="100"
+              />
+            </label>
+            <button class="btn" type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section-images">
+        <div class="container">
+          <h2 class="visually-hidden">Images list</h2>
+          <span class="loader"></span>
+          <ul class="gallery"></ul>
         </div>
       </section>
     </main>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
